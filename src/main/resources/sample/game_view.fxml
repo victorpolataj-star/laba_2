@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="sample.GameController"
+      alignment="TOP_CENTER"
+      spacing="10">
+
+    <Pane fx:id="gamePane"
+          prefWidth="800"
+          prefHeight="600"
+          style="-fx-background-color: #f0f0f0; -fx-border-color: #cccccc; -fx-border-width: 2;">
+        <Circle fx:id="ball"
+                radius="25"
+                fill="#ff4444"
+                stroke="#cc0000"
+                strokeWidth="2"/>
+    </Pane>
+
+    <Label fx:id="scoreLabel" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Счёт: 0"/>
+    <Label fx:id="statusLabel" style="-fx-font-size: 14px;" text="Статус: Активна"/>
+    <Label fx:id="speedLabel" style="-fx-font-size: 14px;" text="Скорость: 200.0 px/сек"/>
+    <Button fx:id="newGameButton" text="Новая игра" style="-fx-font-size: 14px;"/>
+
+</VBox>
